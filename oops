@@ -1,0 +1,120 @@
+🔹 Core OOPs Concepts
+1. Class & Object
+
+Q: What is a class and object in C++?
+
+A: A class is a user-defined blueprint. An object is an instance of a class created at runtime.
+
+2. Encapsulation
+
+Q: What is encapsulation?
+
+A: Wrapping data (variables) and methods into a single unit (class). Achieved using access specifiers (private, protected, public). Improves security and modularity.
+
+3. Abstraction
+
+Q: What is abstraction in C++?
+
+A: Hiding implementation details and showing only the functionality. Achieved using abstract classes (pure virtual functions) and interfaces.
+
+4. Inheritance
+
+Q: Types of inheritance in C++?
+
+A: Single, Multiple, Multilevel, Hierarchical, Hybrid.
+
+Q: Why inheritance?
+
+A: Code reusability, method overriding, polymorphism.
+
+5. Polymorphism
+
+Q: What is polymorphism?
+
+A: One name, many forms.
+
+Compile-time (static): Function overloading, Operator overloading.
+
+Runtime (dynamic): Function overriding with virtual functions.
+
+6. Virtual Functions & V-Table
+
+Q: What are virtual functions?
+
+A: Functions in base class marked with virtual, allow runtime overriding in derived class.
+
+Q: What is vtable?
+
+A: A table of function pointers maintained per class to support runtime polymorphism.
+
+7. Constructor & Destructor
+
+Q: Types of constructors?
+
+A: Default, Parameterized, Copy constructor.
+
+Q: Why destructor is virtual?
+
+A: To ensure proper cleanup in case of inheritance.
+
+8. Friend Function
+
+Q: What is a friend function?
+
+A: A function declared with friend keyword, can access private/protected members of a class.
+
+9. Operator Overloading
+
+Q: Can we overload all operators?
+
+A: Most can, but not all (e.g., ::, .*, sizeof, ?:).
+
+Example: Complex operator+(Complex obj);
+
+10. This Pointer
+
+Q: What is this pointer?
+
+A: A pointer that points to the current object of the class. Automatically passed to non-static member functions.
+
+11. Static Members
+
+Q: What are static variables and functions in a class?
+
+A: Shared across all objects. Functions can access only static members.
+
+12. Overloading vs Overriding
+
+Q: Difference?
+
+A:
+
+Overloading: Same function name, different parameters, compile-time polymorphism.
+
+Overriding: Derived class redefines base class function, runtime polymorphism.
+
+13. Shallow Copy vs Deep Copy
+
+Q: Difference?
+
+A:
+
+Shallow Copy: Copies pointer values, not actual data.
+
+Deep Copy: Copies actual data along with dynamically allocated memory.
+
+14. Pure Virtual Function & Abstract Class
+
+Q: What is pure virtual function?
+
+A: virtual void fun() = 0; → No implementation in base class.
+
+Q: Abstract class?
+
+A: A class with at least one pure virtual function.
+
+15. Multiple Inheritance & Diamond Problem
+
+Q: What is diamond problem?
+
+A: Ambiguity due to multiple inheritance. Solved by using virtual base classes.
