@@ -118,3 +118,204 @@ A: A class with at least one pure virtual function.
 Q: What is diamond problem?
 
 A: Ambiguity due to multiple inheritance. Solved by using virtual base classes.
+
+
+
+🔹 OOPS Quick Recall for Interviews (C++)
+
+Class & Object – Class = blueprint, Object = instance. Encapsulates data + methods.
+
+Encapsulation – Wrapping data & functions in a single unit (class). Provides data hiding.
+
+Abstraction – Hiding implementation details, showing only necessary features. Achieved via abstract classes & interfaces.
+
+Inheritance – Reuse existing class properties. Types: Single, Multiple, Multilevel, Hierarchical, Hybrid.
+
+Polymorphism – One entity, many forms.
+
+Compile-time (Function/Operator Overloading).
+
+Runtime (Virtual Functions, Method Overriding).
+
+Constructor & Destructor – Constructor = initializes object, Destructor = cleans memory.
+
+Types of Constructors – Default, Parameterized, Copy constructor.
+
+Virtual Functions – Enables runtime polymorphism, achieved via vtable.
+
+Pure Virtual Function & Abstract Class – Function with =0; Abstract class cannot be instantiated.
+
+Friend Function – Non-member function, but can access private/protected data.
+
+Static Members – Belong to class, not object. Shared by all objects.
+
+this Pointer – Points to the current object.
+
+Operator Overloading – Redefine operator behavior for user-defined types.
+
+Function Overloading vs Overriding – Overloading = same name, different parameters; Overriding = same function, different class.
+
+Virtual Destructor – Ensures proper cleanup in inheritance hierarchy.
+
+Shallow Copy vs Deep Copy – Shallow: copies reference; Deep: copies actual content.
+
+Object Slicing – Assigning derived object to base object loses derived part.
+
+Interface in C++ – Achieved via abstract class with only pure virtual functions.
+
+Dynamic Binding vs Static Binding – Static: compile time, Dynamic: runtime (via virtual).
+
+Access Specifiers – Public, Private, Protected. Control visibility & inheritance type.
+
+Diamond Problem – Ambiguity in multiple inheritance. Solved using virtual inheritance.
+
+Overloading Restrictions – Cannot overload ::, .*, sizeof, ?:, typeid.
+
+Inline Functions – Compiler replaces call with function body; reduces overhead.
+
+Templates – Generic programming. Types: Function template, Class template.
+
+Exception Handling – try, catch, throw. Prevents abnormal termination.
+
+
+
+
+
+
+
+1. Class & Object
+
+Blueprint of data + functions.
+
+class Car {
+public:
+    string brand;
+    void drive() { cout << "Driving " << brand; }
+};
+int main() {
+    Car c; c.brand="BMW"; c.drive();
+}
+
+
+2. Encapsulation
+
+Wrapping data & methods, data hiding using private.
+
+class Student {
+private: int marks;
+public: 
+    void setMarks(int m){ marks=m; }
+    int getMarks(){ return marks; }
+};
+
+
+3. Abstraction
+
+Hiding implementation, showing only essentials (using abstract class/pure virtual).
+
+class Shape {
+public: virtual void draw() = 0; // pure virtual
+};
+class Circle: public Shape {
+public: void draw(){ cout<<"Circle"; }
+};
+
+
+5. Polymorphism
+
+Compile-time (function/ operator overloading)
+
+class Math {
+public: 
+    int add(int a,int b){ return a+b; }
+    double add(double a,double b){ return a+b; }
+};
+
+6. Constructor & Destructor
+
+Special functions for init & cleanup.
+
+class A {
+public:
+    A(){ cout<<"Constructor"; }
+    ~A(){ cout<<"Destructor"; }
+};
+
+
+7. Copy Constructor
+
+Initializes object with another object.
+
+class Test {
+    int x;
+public:
+    Test(int a){ x=a; }
+    Test(const Test &t){ x=t.x; }  // Copy constructor
+};
+
+
+
+8. Friend Function
+
+Access private/protected of a class.
+
+class Box {
+private: int width;
+public: Box(){ width=10; }
+    friend void print(Box);
+};
+void print(Box b){ cout<<b.width; }
+
+
+
+9. Operator Overloading
+
+Customize operator behavior.
+
+class Complex {
+    int r,i;
+public:
+    Complex(int a,int b){ r=a; i=b; }
+    Complex operator+(Complex c){ return Complex(r+c.r, i+c.i); }
+};
+
+
+11. Virtual Functions & V-Table
+
+Enable runtime polymorphism.
+
+class Base { public: virtual void show(){ cout<<"Base"; }};
+class Derived: public Base { public: void show(){ cout<<"Derived"; }};
+
+
+12. Pure Virtual Function & Abstract Class
+
+Used for abstraction.
+
+class Shape {
+public: virtual void draw()=0;  // abstract
+};
+
+13. Static Members
+
+Belong to class not object.
+
+class Demo {
+public:
+    static int count;
+};
+int Demo::count=0;
+
+
+14. ‘this’ Pointer
+
+Refers to current object.
+
+class A {
+    int x;
+public:
+    void setX(int x){ this->x = x; }
+};
+15. Memory Management (new/delete)
+int* p = new int(10);
+delete p;
