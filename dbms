@@ -1,0 +1,102 @@
+📌 DBMS Short Notes (Interview POV)
+1. Basics
+
+DBMS = Software to manage, store, and retrieve data efficiently.
+
+Difference: DBMS vs RDBMS → RDBMS uses relations (tables), supports normalization & constraints.
+
+2. Keys
+
+Primary Key → Uniquely identifies a record.
+
+Candidate Key → Multiple options for Primary Key.
+
+Foreign Key → Links two tables.
+
+Composite Key → Combination of two or more attributes.
+
+Super Key → Any attribute(s) that can identify a record uniquely.
+
+3. Normalization
+
+Removes redundancy & anomalies.
+
+1NF → Atomic values.
+
+2NF → No partial dependency.
+
+3NF → No transitive dependency.
+
+BCNF → Stronger version of 3NF.
+
+4. Indexing
+
+Improves retrieval speed.
+
+Clustered Index → Changes physical order of rows.
+
+Non-clustered Index → Only creates a reference.
+
+5. Transactions & Properties
+
+Transaction = Sequence of operations performed as a single unit.
+
+ACID properties:
+
+Atomicity → All or nothing.
+
+Consistency → DB remains valid.
+
+Isolation → Transactions execute independently.
+
+Durability → Once committed, data persists.
+
+6. Concurrency Control
+
+Problems: Deadlock, Lost Update, Dirty Read, Phantom Read.
+
+Solutions: Locking (Shared & Exclusive), Timestamp ordering.
+
+7. Joins (Concept)
+
+Inner Join → Common values.
+
+Left Join → All from left + matching right.
+
+Right Join → All from right + matching left.
+
+Full Join → All from both tables.
+
+8. Views
+
+Virtual table, does not store data.
+
+Used for security & abstraction.
+
+9. Stored Procedures & Triggers
+
+Procedure → Precompiled SQL block.
+
+Trigger → Auto executed on event (Insert/Update/Delete).
+
+10. ER Model
+
+Entity → Object.
+
+Attributes → Properties of entity.
+
+Relationship → Association between entities.
+
+11. File Organization
+
+Heap file → Unordered.
+
+Sequential file → Ordered.
+
+Hashing → Direct access.
+
+12. Recovery Techniques
+
+Backup & Log-based recovery.
+
+Checkpoints used for faster recovery.
