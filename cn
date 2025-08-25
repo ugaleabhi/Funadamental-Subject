@@ -1,0 +1,147 @@
+🔹 Core CN Concepts
+1. Computer Network
+
+Q: What is a Computer Network?
+A: A collection of interconnected devices that communicate and share resources.
+
+Types: LAN, MAN, WAN, PAN
+
+Models: OSI (7 layers), TCP/IP (4 layers)
+
+2. OSI Model (7 Layers)
+
+Physical – Transmission of bits (cables, signals).
+
+Data Link – Error detection, MAC addressing (Ethernet).
+
+Network – Routing, logical addressing (IP).
+
+Transport – Reliable delivery, TCP/UDP.
+
+Session – Manages sessions between applications.
+
+Presentation – Data translation, encryption, compression.
+
+Application – End-user services (HTTP, FTP, DNS).
+
+3. TCP/IP Model (4 Layers)
+
+Application (HTTP, FTP, DNS, SMTP)
+
+Transport (TCP – reliable, UDP – fast)
+
+Internet (IP, ICMP, ARP)
+
+Network Access (Ethernet, Wi-Fi)
+
+4. Switching & Routing
+
+Switching: Data Link layer, forwards using MAC addresses.
+
+Routing: Network layer, forwards using IP addresses.
+
+Devices: Hub, Switch, Router.
+
+5. IP Addressing
+
+IPv4: 32-bit, written as 192.168.1.1.
+
+IPv6: 128-bit, written in hex.
+
+Subnetting: Divides networks for efficiency.
+
+Classes: A, B, C (based on leading bits).
+
+6. Protocols
+
+TCP: Reliable, connection-oriented.
+
+UDP: Fast, connectionless.
+
+HTTP/HTTPS: Web communication.
+
+FTP: File transfer.
+
+SMTP/IMAP/POP3: Email.
+
+DNS: Domain name resolution.
+
+DHCP: Dynamic IP allocation.
+
+7. Transmission Modes
+
+Simplex – One-way.
+
+Half-Duplex – Both directions but one at a time.
+
+Full-Duplex – Both directions simultaneously.
+
+8. Transmission Media
+
+Guided: Twisted pair, Coaxial, Fiber optic.
+
+Unguided: Radio, Microwave, Infrared.
+
+9. Error Detection & Control
+
+Parity Bit – Simple error check.
+
+Checksum – Verifies data integrity.
+
+CRC (Cyclic Redundancy Check) – Detects burst errors.
+
+ARQ (Automatic Repeat Request) – Ensures reliable transmission.
+
+10. Flow Control & Congestion Control
+
+Flow Control: Stop-and-Wait, Sliding Window.
+
+Congestion Control: TCP Tahoe, Reno.
+
+11. Multiple Access Protocols
+
+ALOHA – Random transmission.
+
+CSMA/CD – Ethernet (detects collisions).
+
+CSMA/CA – Wi-Fi (avoids collisions).
+
+12. Network Devices
+
+Hub – Broadcasts to all.
+
+Switch – Uses MAC, reduces collisions.
+
+Router – Uses IP, connects networks.
+
+Gateway – Connects different protocols.
+
+13. DNS & DHCP
+
+DNS: Converts domain name → IP.
+
+DHCP: Assigns dynamic IPs automatically.
+
+14. Firewalls & Security
+
+Firewall: Blocks unauthorized access.
+
+Encryption: SSL/TLS for secure communication.
+
+Attacks: DoS, DDoS, Phishing, Man-in-the-Middle.
+
+15. CN Concepts Quick Recall (Interview)
+
+OSI = 7 layers, TCP/IP = 4 layers.
+
+IP = Logical addressing, MAC = Physical addressing.
+
+TCP = Reliable, UDP = Fast.
+
+DNS = Name to IP, DHCP = IP allocation.
+
+Switch = MAC, Router = IP.
+
+Congestion Control = TCP Tahoe/Reno.
+
+Error Detection = Parity, CRC, Checksum.
